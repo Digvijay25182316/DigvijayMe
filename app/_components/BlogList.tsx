@@ -3,6 +3,7 @@ import urlFor from '@/lib/UrlFor'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { RxArrowTopRight } from "react-icons/rx"
 
 interface Props {
     posts: Post[]
@@ -31,14 +32,15 @@ function BlogList({ posts }: Props) {
                                     )}</div>
                                 </div>
                             </div>
-                            <div className='mt-5 flex-1'>
+                            <div className='pt-3 flex-1 bg-gray-800 rounded-b-lg'>
                                 <p className='p-2'>{post.title}</p>
                                 <p className='p-2 line-clamp-2'>{post.description}</p>
+                                <button className='flex items-center gap-2 bg-black rounded-lg px-4'>view<RxArrowTopRight /></button>
                             </div>
                         </div>
                     </Link>
                 ))}</div>
-        </div>
+        </div >
     )
 }
 

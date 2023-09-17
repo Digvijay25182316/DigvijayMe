@@ -26,10 +26,16 @@ function Menu() {
                 <RiMenu5Fill />
             </button>
             <div className={isOpen ? "fixed top-0 bottom-0 right-0 left-0 h-screen backdrop-brightness-50 z-[2000]" : ''}>
-                <div className={`fixed top-0 left-0 right-0  transition-transform duration-500 ${isOpen ? 'transform translate-y-0' : " transform -translate-y-full"}`}>
+                <div className={`fixed top-0 left-0 right-0  transition-transform duration-500 ${isOpen ? 'transform translate-y-0' : " transform -translate-y-full z-[3000]"}`}>
                     <div className=" h-96 bg-gray-800 rounded-b-2xl m-1">
-                        <div className="h-80"></div>
-                        <button className="bg-gray-700 px-4 py-1 rounded-lg" onClick={() => setIsOpen(!isOpen)}>Close</button>
+                        <div className="h-80 flex items-center justify-center">
+                            <div className="flex flex-col items-center gap-5">
+                                <p className="text-3xl">join the community</p>
+                                <p className="text-md">Dont miss the daily updates</p>
+                                <button className="px-4 bg-gray-700 rounded-xl text-yellow-200">Subscribe</button>
+                            </div>
+                        </div>
+                        <button className="bg-gray-700 px-4 py-1 rounded-lg mx-5" onClick={() => setIsOpen(!isOpen)}>close</button>
                     </div>
                 </div>
             </div>
