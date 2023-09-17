@@ -25,7 +25,7 @@ export async function generateStaticParams() {
     }))
 }
 
-async function page({ params: { slug } }: Props) {
+async function Page({ params: { slug } }: Props) {
     const query = groq`
     *[_type=='post'&& slug.current==$slug][0]
     {
@@ -58,4 +58,4 @@ async function page({ params: { slug } }: Props) {
     )
 }
 
-export default page
+export default Page

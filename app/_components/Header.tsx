@@ -3,9 +3,9 @@ import React, { useState } from "react";
 
 function Header() {
     return (
-        <header className="fixed left-0 right-0 top-0 backdrop-blur-2xl z-[1000]">
+        <header className="fixed left-0 right-0 top-0 backdrop-blur-2xl z-[1000] md:pr-10 px-3">
             <div className="flex items-center py-4 justify-between px-2">
-                <div className="text-xl text-gray-500 font-semibold flex items-center gap-1">
+                <div className="text-xl text-gray-500 font-semibold flex items-center md:gap-5 gap-3">
                     <Menu />
                     <p>NECTAR_DEV</p>
                 </div>
