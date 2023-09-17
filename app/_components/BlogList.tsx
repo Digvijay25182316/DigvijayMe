@@ -15,7 +15,7 @@ function BlogList({ posts }: Props) {
                 {posts?.map(post => (
                     <Link href={`/post/${post.slug.current}`} key={post._id} className='rounded-lg'>
                         <div key={post._id} className='group flex flex-col cursor-pointer md:max-w-xl '>
-                            <div className='relative w-full md:h-80 drop-shadow-lg group-hover:scale-105 transition-transform duration-200 ease-in-out h-72 '>
+                            <div className='relative w-full md:h-80 drop-shadow-lg group-hover:scale-105 transition-transform duration-200 ease-in-out h-60 '>
                                 <Image src={urlFor(post.mainImage).url()}
                                     fill
                                     alt={post.title}
