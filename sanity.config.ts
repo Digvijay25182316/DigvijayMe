@@ -15,8 +15,8 @@ import { getdefaultDocumentNode } from './structure'
 
 export default defineConfig({
   basePath: '/studio',
-  name: 'NECTAR_content_studio',
-  title: 'NECTAR content studio',
+  name: 'studio',
+  title: 'DFORDEV studio',
   projectId,
   dataset,
   // Add and edit the content schema in the './sanity/schema' folder
