@@ -1,16 +1,21 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { RiMenu5Fill } from 'react-icons/ri'
+import Logoimage from "../../asset/Logodfd.png"
+import Link from "next/link";
 
 function Header() {
     return (
-        <header className="fixed left-0 right-0 top-0 backdrop-blur-2xl z-[1000] md:pr-10 px-3">
+        <header className="fixed left-0 right-0 top-0 backdrop-blur-2xl z-[1000] md:px-10 px-3">
             <div className="flex items-center py-4 justify-between px-2">
-                <div className="text-xl text-gray-500 font-semibold flex items-center md:gap-5 gap-3">
-                    <Menu />
-                    <p>NECTAR_DEV</p>
-                </div>
-                <button className=" bg-gray-700 text-yellow-400 rounded-full px-4 text-lg">Subscribe</button>
+                <Image src={Logoimage} alt="logoimaeg" height={100} width={100} className="h-10 w-fit" />
+                {/* <div className="text-xl text-gray-500 font-semibold flex items-center md:gap-5 gap-3">
+                    {/* <Menu />
+                    <p>NECTAR_DEV</p> 
+                </div> */}
+                <Link href={"/"}><button className=" bg-gray-700 text-yellow-400 rounded-full px-4 text-lg">All Blog Posts</button></Link>
+                {/* <button className=" bg-gray-700 text-yellow-400 rounded-full px-4 text-lg">Subscribe</button> */}
             </div>
         </header>
     );
