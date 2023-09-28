@@ -23,19 +23,19 @@ export const RichTextComponent = {
     },
     block: {
         h1: ({ children }: any) => (
-            <h1 className='md:text-5xl text-4xl md:py-10 py-5 font-bold text-yellow-200'>{children}</h1>
+            <h1 className='md:text-5xl text-4xl md:py-10 py-5 font-bold text-gray-600'>{children}</h1>
         ),
         h2: ({ children }: any) => (
-            <h2 className='md:text-4xl text-3xl md:py-10 py-5 font-bold text-yellow-200'>{children}</h2>
+            <h2 className='md:text-4xl text-3xl md:py-10 py-5 font-bold text-gray-600'>{children}</h2>
         ),
         h3: ({ children }: any) => (
-            <h3 className='md:text-3xl text-2xl md:py-10 py-5 font-bold text-yellow-200'>{children}</h3>
+            <h3 className='md:text-3xl text-2xl md:py-10 py-5 font-bold text-gray-600'>{children}</h3>
         ),
         h4: ({ children }: any) => (
-            <h4 className='md:text-2xl text-xl md:py-10 py-5 font-bold text-yellow-200'>{children}</h4>
+            <h4 className='md:text-2xl text-xl md:py-10 py-5 font-bold text-gray-600'>{children}</h4>
         ),
         blockquote: ({ children }: any) => (
-            <blockquote className='border-l-4 border-l-gray-700 bg-gray-800 pl-3'>{children}</blockquote>
+            <blockquote className='border-l-4 border-l-gray-700 bg-gray-200 p-5'>{children}</blockquote>
         )
     },
     marks: {

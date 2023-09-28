@@ -39,7 +39,7 @@ async function Page({ params: { slug } }: Props) {
         <article className="md:px-10 pb-28 mt-20 md:max-w-5xl mx-auto px-4">
             <section className=" flex flex-col gap-5">
                 <h1 className="md:text-5xl py-10 font-bold text-purple-400 text-3xl text-center">{post.title}</h1>
-                <section className="bg-gray-800 p-3 rounded-t-xl mb-5">
+                <section className="bg-gray-200 p-3 rounded-t-xl mb-5">
                     <div className="flex gap-3 items-center">
                         <Image src={urlFor(post.author.image).toString()} alt={post.author.name} height={100} width={100} className="h-10 w-10 rounded-full" />
                         <div>
