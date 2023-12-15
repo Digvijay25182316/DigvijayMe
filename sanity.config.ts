@@ -10,7 +10,6 @@ import { deskTool } from "sanity/desk";
 import { apiVersion, dataset, projectId } from "./sanity/env";
 import { schema } from "./sanity/schema";
 import StudioNavbar from "./app/_components/StudioNavbar";
-import Logo from "./app/_components/Logo";
 import { getdefaultDocumentNode } from "./structure";
 
 export default defineConfig({
@@ -29,7 +28,6 @@ export default defineConfig({
   ],
   studio: {
     components: {
-      logo: Logo,
       navbar: StudioNavbar,
     },
   },
